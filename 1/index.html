@@ -7,11 +7,31 @@ Tip: Investigar el evento window.onload
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script>
+
+    window.onload = function () {
+      alert("Alerta al terminar la carga WOOOOW!!");
+    };
+    $(document).ready(function () {
+      alert("document cargo");
+    });
+  </script>
+
+</head>
+
+<body>
+  <ul>
+    <li><img src="https://picsum.photos/200/300/?gravity=east" alt=""></li>
+    <li><img src="https://picsum.photos/200/300/?gravity=east" alt=""></li>
+    <li><img src="https://picsum.photos/200/300/?gravity=east" alt=""></li>
+  </ul>
+</body>
+
 </html>
